@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+AppMain -> fileReader
+fileReader -> parseLoop
+parseLoop -> success
+
+abstract fileReader{
+    File data.txt
+    while ()
+        temp = readfile();
+        names.add(temp);
+}
+
+abstract parseLoop{
+    data.toString();
+    parsed = data(split);
+    print()
+}
+
+class success{
+    Junit5 Success;
+}
+
+class AppMain {
+<list> Names;
+int i,j;
+String temp;
+}
+
+@enduml

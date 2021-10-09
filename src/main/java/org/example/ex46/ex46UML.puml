@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+AppMain -> inputFile
+inputFile -> fileParser
+fileParser -> printResult
+printResult --> printBadger
+printResult --> printMushroom
+printResult --> printSnake
+printResult -> success
+
+abstract fileParser{
+    File namesFile = new.txt
+    Scanner txtReader
+}
+
+abstract printResult
+{
+    int i,j,K
+    while (txtReader.hasNextLine())
+         if(badger)... i++;
+         if(mushroom)... j++;
+         if(snake)... k++;
+}
+
+Class printBadger{
+    int i;
+    for()
+    System.out.format(...);
+}
+
+Class printMushroom{
+    int j;
+    for()
+    System.out.format(...);
+}
+
+Class printSnake{
+    int k;
+    for()
+    System.out.format(...);
+}
+
+abstract inputFile{
+    File new input.txt;
+
+}
+
+class success{
+    Junit5 Success;
+}
+
+class AppMain {
+<list> words;
+int i,j,k;
+String temp;
+}
+
+
+@enduml

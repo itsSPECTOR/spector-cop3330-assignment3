@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+AppMain -> inputFile
+inputFile -> replaceString
+replaceString -> output
+output -> success
+
+abstract output{
+    File output.txt
+    while ()
+        temp = readfile();
+        names.add(temp);
+}
+
+abstract inputFile{
+    File namesFile.txt
+    for (j=0;j<i;j++)
+        write(names.get(j));
+}
+
+class success{
+    Junit5 Success;
+}
+
+Class replaceString{
+    replaceString
+}
+
+class AppMain {
+<list> sentence
+}
+
+@enduml

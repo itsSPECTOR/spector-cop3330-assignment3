@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+fileReader <|-- AppMain
+sortArray <|- fileReader
+fileWriter <|-- sortArray
+success <- fileWriter
+
+
+abstract fileReader{
+    File output.txt
+    while ()
+        temp = readfile();
+        names.add(temp);
+}
+
+abstract fileWriter{
+    File namesFile.txt
+    for (j=0;j<i;j++)
+        write(names.get(j));
+}
+
+class success{
+    Junit5 Success;
+}
+
+abstract sortArray{
+       Collections.sort(names);
+}
+
+class AppMain {
+<list> Names;
+int i,j;
+String temp;
+}
+@enduml
